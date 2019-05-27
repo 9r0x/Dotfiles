@@ -1,0 +1,28 @@
+{
+    "workbench.colorTheme": "SynthWave '84",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+    "window.zoomLevel": -2,
+    "python.linting.enabled": true,
+    "python.linting.pylintPath": "pylint",
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "yapf",
+    "python.linting.pylintEnabled": true,
+    "python.pythonPath": "/usr/local/bin/python3",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter-notebook",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "jupyter.askForKernelRestart": false,
+    "jupyter.textOutputLimit": 0,
+    "python.dataScience.runStartupCommands": "%config IPCompleter.use_jedi = False",
+    "jupyter.alwaysTrustNotebooks": true,
+}
