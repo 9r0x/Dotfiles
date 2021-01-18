@@ -22,7 +22,9 @@
       custom-file "~/.emacs.d/custom.el"
       window-divider-default-places t
       window-divider-default-bottom-width 1
-      window-divider-default-right-width 1)
+      window-divider-default-right-width 1
+      python-shell-exec-path '("/usr/local/bin")
+      python-shell-interpreter "python3")
 
 (defun display-startup-echo-area-message ()
   (message "Oh dear! Oh dear! I shall be too late!"))
