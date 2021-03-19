@@ -4,7 +4,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(pyvenv flycheck markdown-mode+ magit lab-themes exec-path-from-shell auto-complete)))
+   '(mpv pyvenv flycheck markdown-mode+ magit lab-themes exec-path-from-shell auto-complete)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

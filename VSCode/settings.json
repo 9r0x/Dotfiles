@@ -15,14 +15,17 @@
     "python.formatting.provider": "yapf",
     "python.linting.pylintEnabled": true,
     "python.pythonPath": "/usr/local/bin/python3",
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter-notebook",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
     "jupyter.askForKernelRestart": false,
     "jupyter.textOutputLimit": 0,
     "python.dataScience.runStartupCommands": "%config IPCompleter.use_jedi = False",
     "jupyter.alwaysTrustNotebooks": true,
+    "python.defaultInterpreterPath": "/usr/local/bin/python3",
+    "material-ui-snippets.showNotesOnStartup": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "redhat.telemetry.enabled": false,
+    "omnisharp.path": "latest",
+    "omnisharp.useGlobalMono": "always",
 }

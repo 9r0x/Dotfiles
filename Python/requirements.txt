@@ -5,6 +5,7 @@ pylint
 yapf
 virtualenvwrapper
 jupyterlab
-numba
 ipyparallel
 pandas
+networkx
+flask
