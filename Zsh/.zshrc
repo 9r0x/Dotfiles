@@ -22,6 +22,7 @@ source $ZSH/oh-my-zsh.sh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+PATH="/usr/local/opt/sqlite/bin:$PATH"
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 PATH="/usr/local/sbin:$PATH"
 #VIRTUALENVWRAPPER_PYTHON=$(which python3)
@@ -73,3 +74,4 @@ testnet (){
 
 # ls -> exa
 # cat -> bat
+

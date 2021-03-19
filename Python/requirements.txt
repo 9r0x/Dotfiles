@@ -8,3 +8,6 @@ jupyterlab
 numba
 ipyparallel
 pandas
+qiskit[visualization]
+networkx
+flask
