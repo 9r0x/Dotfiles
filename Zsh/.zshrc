@@ -32,6 +32,7 @@ alias e='emacsclient -t'
 alias top='htop'
 alias eslint='./node_modules/.bin/eslint'
 alias ma='wolframscript'
+alias a2c='aria2c --enable-rpc --rpc-listen-all --pause-metadata & serve ~/Projects/webui-aria2/docs/ &'
 
 to_gif () {
     ffmpeg -y -i $1 -vf fps=10,scale=320:-1:flags=lanczos,palettegen palette.png
@@ -70,6 +71,24 @@ sys_proxy () {
 
 testnet (){
     curl -s https://api.ip.sb/geoip | jq -r '.ip + " " + .country'
+}
+
+mergevid (){
+    rm -f 'vid.txt'
+    for f in $@
+    do
+	echo 'file' $f >> 'vid.txt'
+    done
+    ffmpeg -f concat -i 'vid.txt' -c copy out.mp4
+    rm 'vid.txt'
+}
+
+compress (){
+    for f in $@
+    do
+	oname=${f%.*}'_out.'${f##*.}
+	ffmpeg -i $f -vcodec libx265 -crf 18 -vtag hvc1 -preset veryfast -an $oname
+    done
 }
 
 # ls -> exa
