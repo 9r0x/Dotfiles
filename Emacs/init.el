@@ -32,6 +32,7 @@
 (lab-themes-load-style 'light)
 (add-to-list 'default-frame-alist
              '(ns-transparent-titlebar . t))
+(add-to-list 'default-frame-alist '(ns-appearance . light))
 (load custom-file)
 (ac-config-default)
 (ac-flyspell-workaround)

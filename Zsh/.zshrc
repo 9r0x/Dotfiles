@@ -91,6 +91,10 @@ compress (){
     done
 }
 
+play (){
+    python3 /Users/9r0x/Projects/bmpv/Bmpv.py flv $1
+}
+
 # ls -> exa
 # cat -> bat
 
