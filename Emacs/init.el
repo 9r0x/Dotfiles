@@ -44,7 +44,7 @@
 ; Font
 (add-to-list 'default-frame-alist
              '(font . "Fira Code Retina-14"))
-(load "~/.emacs.d/lisp/fira-code-mode.el")
+(load "~/.emacs.d/lisp/fira-code-mode")
 (let (
       ($replacePairs
        [
@@ -112,3 +112,7 @@
 	  (lambda () (if (= (count-windows) 1)
 			 (window-divider-mode 0)
 		       (window-divider-mode))))
+
+;; View byte array file as od dump
+(load "~/.emacs.d/lisp/view-byte-array")
+(global-set-key "\M-#" 'view-byte-array)
