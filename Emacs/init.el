@@ -116,3 +116,4 @@
 ;; View byte array file as od dump
 (load "~/.emacs.d/lisp/view-byte-array")
 (global-set-key "\M-#" 'view-byte-array)
+(global-set-key "\M-+" 'hexl-find-file)

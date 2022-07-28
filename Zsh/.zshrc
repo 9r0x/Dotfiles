@@ -14,6 +14,8 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(virtualenv user dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time status time)
 POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="\u2570%F{255}\uF460%F{250}\uF460%F{245}\uF460%f "
 POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR="\uE0B4"
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_to_first_and_last"
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 
 plugins=(git zsh-autosuggestions zsh-completions zsh-syntax-highlighting)
 autoload -U compinit && compinit
@@ -33,6 +35,8 @@ alias top='htop'
 alias eslint='./node_modules/.bin/eslint'
 alias ma='wolframscript'
 alias a2c='aria2c --enable-rpc --rpc-listen-all --pause-metadata & serve ~/Projects/webui-aria2/docs/ &'
+alias icp='scp -oProxyCommand="inetcat 22"';
+alias issh='ssh -oProxyCommand="inetcat 22" root@localhost'
 
 to_gif () {
     ffmpeg -y -i $1 -vf fps=10,scale=320:-1:flags=lanczos,palettegen palette.png
@@ -73,15 +77,7 @@ testnet (){
     curl -s https://api.ip.sb/geoip | jq -r '.ip + " " + .country'
 }
 
-mergevid (){
-    rm -f 'vid.txt'
-    for f in $@
-    do
-	echo 'file' $f >> 'vid.txt'
-    done
-    ffmpeg -f concat -i 'vid.txt' -c copy out.mp4
-    rm 'vid.txt'
-}
+alias mergevid="python3 /Users/9r0x/Projects/mergevid/mergevid.py"
 
 compress (){
     for f in $@

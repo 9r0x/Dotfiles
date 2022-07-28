@@ -1,5 +1,79 @@
 {
-    "workbench.colorTheme": "SynthWave '84",
+    "workbench.colorTheme": "Absent Contrast (rainglow)",
+    "workbench.colorCustomizations": {
+        "activityBar.foreground": "#228A96",
+        "activityBarBadge.background": "#FFF",
+        "activityBarBadge.foreground": "#228A96",
+        "selection.background": "#228A96AA",
+        "editor.findMatchBackground": "#68BCC4",
+        "editor.findMatchHighlightBackground": "#68BCC4",
+        "editor.findRangeHighlightBackground": "#68BCC4",
+        "input.placeholderForeground": "#8C939B",
+        "editorBracketHighlight.foreground1": "#768ECE",
+        "editorBracketHighlight.foreground2": "#ADDBBC",
+        "editorBracketHighlight.foreground3": "#68BCC4",
+        "editorBracketHighlight.unexpectedBracket.foreground": "#FF8B85",
+    },
+    "editor.tokenColorCustomizations": {
+        "comments": "#076971",
+        "strings": "#8DDEE6",
+        "textMateRules": [
+            {
+                "name": "Storage",
+                "scope": "storage",
+                "settings": {
+                    "fontStyle": "underline",
+                    "foreground": "#228A96"
+                }
+            },
+            {
+                "name": "Keyword",
+                "scope": "keyword",
+                "settings": {
+                    "fontStyle": "italic",
+                    "foreground": "#228a96"
+                }
+            },
+            {
+                "name": "Class name",
+                "scope": "entity",
+                "settings": {
+                    "fontStyle": "bold",
+                    "foreground": "#228A96"
+                }
+            },
+            {
+                "name": "Inherited class",
+                "scope": "entity.other.inherited-class",
+                "settings": {
+                    "fontStyle": "",
+                    "foreground": "#228A96"
+                }
+            },
+            {
+                "name": "Library class/type",
+                "scope": [
+                    "support.type",
+                    "support.class"
+                ],
+                "settings": {
+                    "fontStyle": "italic",
+                    "foreground": "#8DDEE6"
+                }
+            },
+            {
+                "name": "Constant",
+                "scope": [
+                    "constant.language",
+                    "constant.numeric"
+                ],
+                "settings": {
+                    "fontStyle": "bold",
+                    "foreground": "#8DDEE6"
+                }
+            },
+        ]
+    },
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.fontSize": 16,
@@ -14,18 +88,21 @@
     "editor.formatOnSave": true,
     "python.formatting.provider": "yapf",
     "python.linting.pylintEnabled": true,
-    "python.pythonPath": "/usr/local/bin/python3",
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
     "jupyter.askForKernelRestart": false,
-    "jupyter.textOutputLimit": 0,
-    "python.dataScience.runStartupCommands": "%config IPCompleter.use_jedi = False",
-    "jupyter.alwaysTrustNotebooks": true,
+    "notebook.output.textLineLimit": 10,
     "python.defaultInterpreterPath": "/usr/local/bin/python3",
-    "material-ui-snippets.showNotesOnStartup": false,
     "javascript.updateImportsOnFileMove.enabled": "always",
-    "redhat.telemetry.enabled": false,
-    "omnisharp.path": "latest",
-    "omnisharp.useGlobalMono": "always",
+    "eslint.format.enable": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "notebook.lineNumbers": "on",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.inlineSuggest.enabled": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "workbench.settings.openDefaultKeybindings": true,
 }
