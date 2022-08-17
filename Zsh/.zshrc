@@ -3,7 +3,7 @@ export VISUAL=emacs
 export EDITOR="$VISUAL"
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-
+export HISTCONTROL=ignoredups
 export DYLD_LIBRARY_PATH=/usr/local/opt/openssl/lib:$DYLD_LIBRARY_PATH
 
 ZSH_THEME="powerlevel9k/powerlevel9k"
@@ -93,4 +93,20 @@ play (){
 
 # ls -> exa
 # cat -> bat
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+# __conda_setup="$('/Users/9r0x/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#     eval "$__conda_setup"
+# else
+#     if [ -f "/Users/9r0x/opt/miniconda3/etc/profile.d/conda.sh" ]; then
+#         . "/Users/9r0x/opt/miniconda3/etc/profile.d/conda.sh"
+#     else
+#         export PATH="/Users/9r0x/opt/miniconda3/bin:$PATH"
+#     fi
+# fi
+# unset __conda_setup
+# <<< conda initialize <<<
 

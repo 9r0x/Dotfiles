@@ -1,108 +1,124 @@
 {
-    "workbench.colorTheme": "Absent Contrast (rainglow)",
-    "workbench.colorCustomizations": {
-        "activityBar.foreground": "#228A96",
-        "activityBarBadge.background": "#FFF",
-        "activityBarBadge.foreground": "#228A96",
-        "selection.background": "#228A96AA",
-        "editor.findMatchBackground": "#68BCC4",
-        "editor.findMatchHighlightBackground": "#68BCC4",
-        "editor.findRangeHighlightBackground": "#68BCC4",
-        "input.placeholderForeground": "#8C939B",
-        "editorBracketHighlight.foreground1": "#768ECE",
-        "editorBracketHighlight.foreground2": "#ADDBBC",
-        "editorBracketHighlight.foreground3": "#68BCC4",
-        "editorBracketHighlight.unexpectedBracket.foreground": "#FF8B85",
-    },
-    "editor.tokenColorCustomizations": {
-        "comments": "#076971",
-        "strings": "#8DDEE6",
-        "textMateRules": [
-            {
-                "name": "Storage",
-                "scope": "storage",
-                "settings": {
-                    "fontStyle": "underline",
-                    "foreground": "#228A96"
-                }
-            },
-            {
-                "name": "Keyword",
-                "scope": "keyword",
-                "settings": {
-                    "fontStyle": "italic",
-                    "foreground": "#228a96"
-                }
-            },
-            {
-                "name": "Class name",
-                "scope": "entity",
-                "settings": {
-                    "fontStyle": "bold",
-                    "foreground": "#228A96"
-                }
-            },
-            {
-                "name": "Inherited class",
-                "scope": "entity.other.inherited-class",
-                "settings": {
-                    "fontStyle": "",
-                    "foreground": "#228A96"
-                }
-            },
-            {
-                "name": "Library class/type",
-                "scope": [
-                    "support.type",
-                    "support.class"
-                ],
-                "settings": {
-                    "fontStyle": "italic",
-                    "foreground": "#8DDEE6"
-                }
-            },
-            {
-                "name": "Constant",
-                "scope": [
-                    "constant.language",
-                    "constant.numeric"
-                ],
-                "settings": {
-                    "fontStyle": "bold",
-                    "foreground": "#8DDEE6"
-                }
-            },
-        ]
-    },
-    "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 16,
-    "terminal.integrated.fontFamily": "FiraCode Nerd Font",
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "terminal.external.osxExec": "iTerm.app",
-    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
-    "window.zoomLevel": -2,
-    "python.linting.enabled": true,
-    "python.linting.pylintPath": "pylint",
-    "editor.formatOnSave": true,
-    "python.formatting.provider": "yapf",
-    "python.linting.pylintEnabled": true,
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
-    },
-    "jupyter.askForKernelRestart": false,
-    "notebook.output.textLineLimit": 10,
-    "python.defaultInterpreterPath": "/usr/local/bin/python3",
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "eslint.format.enable": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
-    "notebook.lineNumbers": "on",
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.inlineSuggest.enabled": true,
-    "git.confirmSync": false,
-    "git.autofetch": true,
-    "workbench.settings.openDefaultKeybindings": true,
+  "workbench.colorTheme": "Absent Contrast (rainglow)",
+  "workbench.colorCustomizations": {
+    "activityBar.foreground": "#228A96",
+    "activityBarBadge.background": "#FFF",
+    "activityBarBadge.foreground": "#228A96",
+    "selection.background": "#228A96AA",
+    "editor.findMatchBackground": "#68BCC4",
+    "editor.findMatchHighlightBackground": "#68BCC4",
+    "editor.findRangeHighlightBackground": "#68BCC4",
+    "input.placeholderForeground": "#8C939B",
+    "editorBracketHighlight.foreground1": "#768ECE",
+    "editorBracketHighlight.foreground2": "#ADDBBC",
+    "editorBracketHighlight.foreground3": "#68BCC4",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#FF8B85"
+  },
+
+  "editor.tokenColorCustomizations": {
+    "comments": "#076971",
+    "strings": "#8DDEE6",
+    "textMateRules": [
+      {
+        "name": "Storage",
+        "scope": "storage",
+        "settings": {
+          "fontStyle": "underline",
+          "foreground": "#228A96"
+        }
+      },
+      {
+        "name": "Keyword",
+        "scope": "keyword",
+        "settings": {
+          "fontStyle": "italic",
+          "foreground": "#228a96"
+        }
+      },
+      {
+        "name": "Class name",
+        "scope": "entity",
+        "settings": {
+          "fontStyle": "bold",
+          "foreground": "#228A96"
+        }
+      },
+      {
+        "name": "Inherited class",
+        "scope": "entity.other.inherited-class",
+        "settings": {
+          "fontStyle": "",
+          "foreground": "#228A96"
+        }
+      },
+      {
+        "name": "Library class/type",
+        "scope": ["support.type", "support.class"],
+        "settings": {
+          "fontStyle": "italic",
+          "foreground": "#8DDEE6"
+        }
+      },
+      {
+        "name": "Constant",
+        "scope": ["constant.language", "constant.numeric"],
+        "settings": {
+          "fontStyle": "bold",
+          "foreground": "#8DDEE6"
+        }
+      }
+    ]
+  },
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "=": "iTerm.app",
+  "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+  "python.linting.enabled": true,
+  "python.linting.pylintPath": "pylint",
+  "editor.formatOnSave": true,
+  "python.formatting.provider": "yapf",
+  "python.linting.pylintEnabled": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "jupyter.askForKernelRestart": false,
+  "notebook.output.textLineLimit": 100,
+  "python.defaultInterpreterPath": "/usr/local/bin/python3",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "notebook.lineNumbers": "on",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.inlineSuggest.enabled": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "workbench.settings.openDefaultKeybindings": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.explorerKind": "external",
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": true
+  },
+  "window.zoomLevel": -1,
+  "files.associations": {
+    "*.rmd": "markdown"
+  },
+  "r.editor.tabSize": 4,
+  "r.editor.spaceAfterKeyword": false,
+  "r.linting.closeCurlySeparateLine": false,
+  "r.linting.enable": true,
+  "r.linting.assignmentType": false
 }
