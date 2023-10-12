@@ -75,10 +75,8 @@
   "terminal.integrated.fontFamily": "FiraCode Nerd Font",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "=": "iTerm.app",
-  "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
   "python.linting.enabled": true,
-  "python.linting.pylintPath": "pylint",
+  "python.linting.pylintPath": "yapf",
   "editor.formatOnSave": true,
   "python.formatting.provider": "yapf",
   "python.linting.pylintEnabled": true,
@@ -90,8 +88,10 @@
   "python.defaultInterpreterPath": "/usr/local/bin/python3",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "eslint.format.enable": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
   },
   "notebook.lineNumbers": "on",
   "workbench.iconTheme": "material-icon-theme",
@@ -124,5 +124,10 @@
   "window.zoomLevel": -1,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "editor.codeActionsOnSave": {},
+  "pylint.args": ["--disable-ids=W1203"],
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "pylint.lintOnChange": true,
+  "python.analysis.autoFormatStrings": true
 }
