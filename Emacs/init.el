@@ -9,7 +9,10 @@
 (when window-system
   (tool-bar-mode 0)
   (scroll-bar-mode 0)
-  (tooltip-mode 0))
+  (tooltip-mode 0)
+  (menu-bar-mode 0)
+  (setq frame-title-format nil)
+  (setq initial-frame-alist '((tool-bar-lines . 0) (width . 80) (height . 30))))
 (setq-default mode-line-format nil
 	      cursor-type 'hbar)
 (blink-cursor-mode -1)
@@ -19,12 +22,9 @@
       initial-scratch-message ""
       inhibit-splash-screen t
       user-full-name "Shukai Ni"
-      custom-file "~/.emacs.d/custom.el"
       window-divider-default-places t
       window-divider-default-bottom-width 1
-      window-divider-default-right-width 1
-      python-shell-exec-path '("/usr/local/bin")
-      python-shell-interpreter "python3")
+      window-divider-default-right-width 1)
 
 (defun display-startup-echo-area-message ()
   (message "Oh dear! Oh dear! I shall be too late!"))
@@ -33,7 +33,6 @@
 (add-to-list 'default-frame-alist
              '(ns-transparent-titlebar . t))
 (add-to-list 'default-frame-alist '(ns-appearance . light))
-(load custom-file)
 (ac-config-default)
 (ac-flyspell-workaround)
 (add-hook 'after-init-hook 'global-display-line-numbers-mode)
@@ -43,7 +42,7 @@
 
 ; Font
 (add-to-list 'default-frame-alist
-             '(font . "Fira Code Retina-14"))
+             '(font . "Fira Code-12"))
 (load "~/.emacs.d/lisp/fira-code-mode")
 (let (
       ($replacePairs
@@ -85,18 +84,12 @@
 (set-language-environment "UTF-8")
 (set-default-coding-systems 'utf-8)
 
-
 ;; Package
 (require 'package)
-(let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
-                    (not (gnutls-available-p))))
-       (proto (if no-ssl "http" "https")))
-  (add-to-list 'package-archives (cons "melpa" (concat proto "://melpa.org/packages/")) t))
-
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(package-initialize)
 
 ;; Package-related config
-(when (memq window-system '(mac ns x))
-  (exec-path-from-shell-initialize))
 (add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
 (add-hook 'text-mode-hook 'flyspell-mode)
 (add-hook 'prog-mode-hook 'flyspell-prog-mode)
@@ -115,5 +108,3 @@
 
 ;; View byte array file as od dump
 (load "~/.emacs.d/lisp/view-byte-array")
-(global-set-key "\M-#" 'view-byte-array)
-(global-set-key "\M-+" 'hexl-find-file)
