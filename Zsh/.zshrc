@@ -17,5 +17,6 @@ savetodisk () {
 
 alias restartcam='echo -n "3-8" | sudo tee /sys/bus/usb/drivers/usb/unbind; sleep 3; echo -n "3-8" | sudo tee /sys/bus/usb/drivers/usb/bind'
 
-alias filter='sudo systemctl start libvirtd && sudo virsh net-start default && sudo virsh start debian12'
+alias vm='sudo systemctl start libvirtd && sudo virsh net-start default && sudo virsh list --all'
 alias o='xdg-open . >/dev/null 2>&1'
+alias bat='awk "{print \$1*10^-6 \" W\"}" /sys/class/power_supply/BAT0/power_now'
