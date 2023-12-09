@@ -28,4 +28,6 @@ alias vm='sudo systemctl start libvirtd; sudo virsh net-start default; sudo virs
 
 alias bat='awk "{print \$1*10^-6 \" W\"}" /sys/class/power_supply/BAT0/power_now'
 
+alias kbdlit='~/Projects/Dotfiles/ROGKeyboard/bin/Brightness'
+
 export PATH=/home/smellon/nsight-systems-2023.4.1/bin:$PATH

@@ -9,6 +9,7 @@ all: bin $(BIN)
 
 bin/%: %.c
 	$(CC) $(CFLAGS) $< -o $@
+	strip $@
 	sudo chown root:root $@	
 	sudo chmod 4755 $@
 
