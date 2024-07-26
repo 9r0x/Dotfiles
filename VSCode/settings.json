@@ -75,17 +75,12 @@
   "terminal.integrated.fontFamily": "FiraCode Nerd Font",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "python.linting.enabled": true,
-  "python.linting.pylintPath": "yapf",
   "editor.formatOnSave": true,
-  "python.formatting.provider": "yapf",
-  "python.linting.pylintEnabled": true,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
   "jupyter.askForKernelRestart": false,
   "notebook.output.textLineLimit": 100,
-  "python.defaultInterpreterPath": "/usr/local/bin/python3",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "eslint.format.enable": true,
   "[typescript]": {
@@ -126,8 +121,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.codeActionsOnSave": {},
-  "pylint.args": ["--disable-ids=W1203"],
   "python.analysis.inlayHints.functionReturnTypes": true,
   "pylint.lintOnChange": true,
-  "python.analysis.autoFormatStrings": true
+  "python.analysis.autoFormatStrings": true,
+  "python.defaultInterpreterPath": "/home/smellon/miniconda3/envs/csci1470",
+  "editor.minimap.enabled": false
 }

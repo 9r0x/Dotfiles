@@ -19,5 +19,6 @@ int main()
 	system("echo 0 | tee /sys/devices/system/cpu/cpu*/power/energy_perf_bias");
 	system("for i in {1..11}; do echo 1 | sudo tee /sys/devices/system/cpu/cpu$i/online; done");
 	system("echo 0 | tee /sys/devices/system/cpu/intel_pstate/no_turbo");
+	system("echo quiet | sudo tee /sys/firmware/acpi/platform_profile");
 	return 0;
 }
